@@ -1,0 +1,24 @@
+{
+  "name": "queued-jsonp",
+  "version": "1.0.0",
+  "description": "queued jsonp,avoid same callback function conflicts",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c build/rollupConf.js"
+  },
+  "author": {
+    "email": "roscoecheung1993@gmail.com",
+    "name": "Roscoe"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-babel": "^2.7.1"
+  }
+}
