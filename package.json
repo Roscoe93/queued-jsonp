@@ -1,24 +1,27 @@
 {
-  "name": "queued-jsonp",
-  "version": "1.0.0",
-  "description": "queued jsonp,avoid same callback function conflicts",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c build/rollupConf.js"
-  },
-  "author": {
-    "email": "roscoecheung1993@gmail.com",
-    "name": "Roscoe"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "url": "^0.11.0"
-  },
-  "devDependencies": {
-    "rollup": "^0.41.6",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-babel": "^2.7.1"
-  }
+	"name": "@newap/queued-jsonp",
+	"version": "2.0.0",
+	"description": "queued jsonp,avoid same callback function conflicts",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src --out-dir dist"
+	},
+	"author": {
+		"email": "roscoecheung1993@gmail.com",
+		"name": "Roscoe"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"babel-runtime": "^6.26.0",
+		"url": "^0.11.0"
+	},
+	"devDependencies": {
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.6.1",
+		"express": "^4.16.3",
+		"webpack": "^4.8.3",
+		"webpack-cli": "^2.1.3"
+	}
 }
